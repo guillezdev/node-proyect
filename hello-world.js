@@ -1,5 +1,7 @@
 import { createServer } from 'node:http';
 import os from 'node:os';
+import pc from "picocolors"
+
 const hostname = '127.0.0.1';
 const port = 3000;
 
@@ -21,4 +23,5 @@ server.listen(port, hostname, () => {
   console.log('CPU:', os.cpus());
   console.log('Información de usuario actual:', os.userInfo());
   console.log('Directorio de inicio del usuario actual:', os.homedir());
+  console.log(pc.green(`How are ${pc.italic(`you`)} doing?`));
 }); 
