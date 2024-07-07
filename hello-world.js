@@ -3,7 +3,7 @@ import os from 'node:os';
 import pc from "picocolors"
 
 const hostname = '127.0.0.1';
-const port = 3000;
+const port = 0;
 
 const server = createServer((req, res) => {
   res.statusCode = 200;
